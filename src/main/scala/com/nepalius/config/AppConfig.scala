@@ -20,7 +20,5 @@ object AppConfig:
   val layer: ZLayer[Any, ReadError[String], DatabaseConfig & ServerConfig] =
     ZLayer {
       for appConfig <- readAppConfig
-      yield ZLayer.succeed(appConfig.database) ++ ZLayer.succeed(
-        appConfig.server,
-      )
+      yield ZLayer.succeed(appConfig.database) ++ ZLayer.succeed(appConfig.server)
     }.flatten
