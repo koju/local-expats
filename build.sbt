@@ -6,7 +6,7 @@ Global / onChangedBuildSource := ReloadOnSourceChanges
 
 val V = new {
   val Doobie = "1.0.0-RC2"
-  val Flyway = "9.8.2"
+  val Flyway = "9.8.3"
   val Postgres = "42.5.0"
   val Quill = "4.6.0"
   val Slf4j = "2.0.4"
