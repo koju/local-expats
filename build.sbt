@@ -14,7 +14,7 @@ val V = new {
   val ZioCats = "3.3.0"
   val ZioConfig = "3.0.2"
   val ZioHttp = "2.0.0-RC11"
-  val ZioJson = "0.3.0"
+  val ZioJson = "0.4.2"
   val ZioLogging = "2.1.5"
 }
 
