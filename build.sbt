@@ -15,7 +15,7 @@ val V = new {
   val ZioConfig = "3.0.2"
   val ZioHttp = "2.0.0-RC11"
   val ZioJson = "0.3.0"
-  val ZioLogging = "2.1.5"
+  val ZioLogging = "2.1.6"
 }
 
 lazy val domain = project
