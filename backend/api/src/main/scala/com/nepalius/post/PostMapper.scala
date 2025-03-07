@@ -1,6 +1,5 @@
 package com.nepalius.post
 
-
 object PostMapper:
 
   def toCreatePost(dto: CreatePostDto) =

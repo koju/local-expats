@@ -1,7 +1,11 @@
 package com.nepalius.user
 
 import com.nepalius.user.User.UserId
-import com.nepalius.user.UserService.{InvalidEmailMessage, UserWithEmailAlreadyInUseMessage, UserWithIdNotFoundMessage}
+import com.nepalius.user.UserService.{
+  InvalidEmailMessage,
+  UserWithEmailAlreadyInUseMessage,
+  UserWithIdNotFoundMessage,
+}
 import com.nepalius.util.Exceptions
 import com.nepalius.util.Exceptions.{AlreadyInUse, BadRequest}
 import org.apache.commons.validator.routines.EmailValidator

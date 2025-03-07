@@ -33,7 +33,7 @@ final case class UserApi(
           .logError
           .pipe(defaultErrorsMappings),
       )
-    
+
   private val loginServerEndpoints: ZServerEndpoint[Any, Any] =
     loginEndpoint
       .zServerLogic(
@@ -41,7 +41,7 @@ final case class UserApi(
           .logError
           .pipe(defaultErrorsMappings),
       )
-    
+
   private val getCurrentUserServerEndpoints: ZServerEndpoint[Any, Any] =
     getCurrentUserEndpoint
       .zServerSecurityLogic[Any, UserSession](handleAuth)
@@ -63,7 +63,7 @@ final case class UserApi(
                 ),
             ),
       )
-    
+
   private val updateCurrentUserServerEndpoints: ZServerEndpoint[Any, Any] =
     updateUserEndpoint
       .zServerSecurityLogic[Any, UserSession](handleAuth)
