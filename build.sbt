@@ -19,7 +19,7 @@ val V = new {
   val Tapir = "1.11.14"
   val Zio = "2.1.15"
   val ZioConfig = "4.0.3"
-  val ZioLogging = "2.4.0"
+  val ZioLogging = "2.5.0"
   val ZioJson = "0.7.0"
 }
 
