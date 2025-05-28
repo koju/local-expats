@@ -11,7 +11,7 @@ val V = new {
   val Laminar = "17.2.1"
   val Logback = "1.5.18"
   val Password4J = "1.8.3"
-  val Postgres = "42.7.5"
+  val Postgres = "42.7.6"
   val Quill = "4.8.6"
   val ScalaJsMacroTaskExecutor = "1.1.1"
   val Slf4j = "2.0.12"
@@ -124,8 +124,8 @@ ThisBuild / assemblyMergeStrategy := {
   case ps if ps.contains("swagger-ui")        => MergeStrategy.singleOrError
   case ps if ps.endsWith("module-info.class") => MergeStrategy.discard
   case ps if ps.startsWith("io/getquill")     => MergeStrategy.first
-  case ps if ps.endsWith("unroll.tasty")     => MergeStrategy.last
-  case ps if ps.endsWith("unroll.class")     => MergeStrategy.last
+  case ps if ps.endsWith("unroll.tasty")      => MergeStrategy.last
+  case ps if ps.endsWith("unroll.class")      => MergeStrategy.last
   case x => (ThisBuild / assemblyMergeStrategy).value(x)
 }
 
