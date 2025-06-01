@@ -124,8 +124,8 @@ ThisBuild / assemblyMergeStrategy := {
   case ps if ps.contains("swagger-ui")        => MergeStrategy.singleOrError
   case ps if ps.endsWith("module-info.class") => MergeStrategy.discard
   case ps if ps.startsWith("io/getquill")     => MergeStrategy.first
-  case ps if ps.endsWith("unroll.tasty")     => MergeStrategy.last
-  case ps if ps.endsWith("unroll.class")     => MergeStrategy.last
+  case ps if ps.endsWith("unroll.tasty")      => MergeStrategy.last
+  case ps if ps.endsWith("unroll.class")      => MergeStrategy.last
   case x => (ThisBuild / assemblyMergeStrategy).value(x)
 }
 
