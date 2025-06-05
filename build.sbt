@@ -1,5 +1,5 @@
 ThisBuild / organization := "com.nepalius"
-ThisBuild / scalaVersion := "3.7.0"
+ThisBuild / scalaVersion := "3.7.1"
 ThisBuild / version := "0.0.1-SNAPSHOT"
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
@@ -124,8 +124,8 @@ ThisBuild / assemblyMergeStrategy := {
   case ps if ps.contains("swagger-ui")        => MergeStrategy.singleOrError
   case ps if ps.endsWith("module-info.class") => MergeStrategy.discard
   case ps if ps.startsWith("io/getquill")     => MergeStrategy.first
-  case ps if ps.endsWith("unroll.tasty")     => MergeStrategy.last
-  case ps if ps.endsWith("unroll.class")     => MergeStrategy.last
+  case ps if ps.endsWith("unroll.tasty")      => MergeStrategy.last
+  case ps if ps.endsWith("unroll.class")      => MergeStrategy.last
   case x => (ThisBuild / assemblyMergeStrategy).value(x)
 }
 
