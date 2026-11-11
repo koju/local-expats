@@ -19,7 +19,7 @@ val V = new {
   val Tapir = "1.11.29"
   val Zio = "2.1.18"
   val ZioConfig = "4.0.3"
-  val ZioLogging = "2.4.0"
+  val ZioLogging = "2.5.4"
   val ZioJson = "0.7.0"
 }
 
@@ -124,8 +124,8 @@ ThisBuild / assemblyMergeStrategy := {
   case ps if ps.contains("swagger-ui")        => MergeStrategy.singleOrError
   case ps if ps.endsWith("module-info.class") => MergeStrategy.discard
   case ps if ps.startsWith("io/getquill")     => MergeStrategy.first
-  case ps if ps.endsWith("unroll.tasty")     => MergeStrategy.last
-  case ps if ps.endsWith("unroll.class")     => MergeStrategy.last
+  case ps if ps.endsWith("unroll.tasty")      => MergeStrategy.last
+  case ps if ps.endsWith("unroll.class")      => MergeStrategy.last
   case x => (ThisBuild / assemblyMergeStrategy).value(x)
 }
 
